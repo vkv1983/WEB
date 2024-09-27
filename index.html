@@ -3,14 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inspirational Quotes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <P><h1>KUMAR V </h1></P><t>
-
-       TEST MESSAGE DONE 
-    </t>
-    <img src="OIP.jpeg",device-width>
-
+    <header>
+        <h1>Inspirational Quotes</h1>
+        <nav>
+            <ul>
+                <li><a href="#quote-container">Quote of the Day</a></li>
+                <li><a href="#random-quote">Random Quote</a></li>
+                <li><a href="#search-quote">Search Quotes</a></li>
+                <li><a href="#submit-quote">Submit a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="quote-container">
+            <!-- Quote will be displayed here -->
+        </section>
+        <section id="random-quote">
+            <button id="random-quote-btn">Get a Random Quote</button>
+            <div id="random-quote-container"></div>
+        </section>
+        <section id="search-quote">
+            <form id="search-quote-form">
+                <input type="text" id="search-quote-input" placeholder="Search quotes by keyword or author">
+                <button id="search-quote-btn">Search</button>
+                <div id="search-quote-results"></div>
+            </form>
+        </section>
+        <section id="submit-quote">
+            <form id="submit-quote-form">
+                <input type="text" id="submit-quote-input" placeholder="Enter a quote">
+                <input type="text" id="submit-quote-author" placeholder="Enter the author's name">
+                <button id="submit-quote-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Inspirational Quotes</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
